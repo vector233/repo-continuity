@@ -18,6 +18,8 @@ related: []
 
 # Work Item Title
 
+Keep this record specific to its delivery. Link shared rules and procedures from their canonical documents. Retain required sections and fields, and add design, slice and review detail only when it helps acceptance or recovery.
+
 ## Parent Coordination
 
 - Local initiative: use `initiative_id` only when a repository-local Initiative is the coordination authority.
@@ -38,14 +40,7 @@ related: []
 
 ## Route Decision
 
-| Dimension | Assessment | Evidence or reason |
-|---|---|---|
-| Scope | low / elevated |  |
-| Uncertainty | low / elevated |  |
-| Risk and reversibility | low / elevated / high |  |
-| Duration | one context / multiple contexts |  |
-| Coordination | one owner / parallel or multi-owner |  |
-| Verification | focused / realistic / independent |  |
+Use the dimensions in [[workflow]] to explain the selected route briefly.
 
 - Selected route: tracked / governed
 - User override, if any:

@@ -5,7 +5,7 @@
 1. Run a Learning Check after validation and capture the lesson plus evidence in the active WORK experience table.
 2. Verify it with code, commands, logs, official references, or repeated observation.
 3. Search existing rules, notes, runbooks, and `project-skills/INDEX.md` for duplicates.
-4. Choose the smallest canonical destination. For tracked or governed work, add a shared destination to `owned_paths` and check active WORK overlap.
+4. Check the destination's responsibility and the lesson's reusable value, then choose the smallest canonical destination that owns it. Follow the repository's Writing Boundaries. For tracked or governed work, add a shared destination to `owned_paths` and check active WORK overlap.
 5. Coordinate a single writer when another active task owns the destination; otherwise update it in place.
 6. Write the rule, fact, procedure, no-op result, or non-promotion reason in the candidate row.
 7. Run structural checks and a retrieval test when an important project Skill changes.

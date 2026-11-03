@@ -16,6 +16,25 @@ Ordinary content searches must name the relevant current paths. Exclude `zettelk
 
 Missing or contradictory routing must be reported. Use a known assigned WORK path when available, then repair its route. A full index rebuild is an explicit maintenance operation; never silently fall back to scanning every historical record. The optional helper can preview and rebuild routes. All routes can also be maintained with Markdown and Git alone.
 
+## Writing Boundaries
+
+Before adding or moving documentation, check the destination's responsibility, existing canonical content, and the evidence supporting the change. Use the smallest existing destination that owns the information.
+
+| Destination | Responsibility |
+|---|---|
+| `AGENTS.md` | repository-wide requirements and constraints |
+| [[AI]] | concise reading order and knowledge navigation |
+| [[workflow]] | delivery routes, lifecycle and coordination semantics |
+| [[git-collaboration]] | persistent Git, isolation and commit policy |
+| Selected WORK or Initiative | its own scope, acceptance, branch, state, evidence and next action |
+| `work/active/<ID>.ref.md` | a small route to its authoritative source |
+| [[work/README]] and other indexes | record conventions and links to canonical content |
+| Domain notes, decisions, runbooks and project Skills | verified knowledge or procedures within their stated topic |
+
+Creating, pausing or reprioritizing a task normally changes its canonical record and individual route. Add navigation only when a required entry is missing. A task branch, checkpoint or validation result stays with its WORK. Update an entry point or shared policy when that document's navigation or repository-wide contract actually changes, and state that reason before editing it.
+
+Promote a task lesson to shared knowledge only when evidence establishes its reusable value. Preserve the distinction between confirmed facts, proposals and unresolved questions. Link shared rules and procedures from task records instead of copying them, and add a new document only when an existing destination cannot own the distinct topic.
+
 ## Open Work Routes
 
 Use one `work/active/<ID>.ref.md` per `backlog`, `active`, `blocked`, or `review` WORK or Initiative. Retain blocked and backlog work until it is explicitly completed or cancelled; age alone does not retire it. Use the format in [[work/active/README]]. There is no central table containing a second copy of task status.
