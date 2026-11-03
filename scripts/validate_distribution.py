@@ -564,6 +564,11 @@ def create_project_skill(target: Path) -> None:
 def create_tracked_work_with_cli(target: Path) -> str:
     work_id = "WORK-20260712122000-tracked-bug"
     run(["git", "switch", "-c", "task/tracked-bug"], cwd=target)
+    vault_before = snapshot_files(target / "zettelkasten")
+    shared_before = {
+        path: (target / path).read_bytes()
+        for path in ("AGENTS.md", "project-skills/INDEX.md")
+    }
     result = run(
         [
             sys.executable,
@@ -589,6 +594,18 @@ def create_tracked_work_with_cli(target: Path) -> str:
         == [f"{work_id}.md"],
         "Tracked work created more than one workflow record",
     )
+    vault_after = snapshot_files(target / "zettelkasten")
+    changed = {
+        path
+        for path in vault_before.keys() | vault_after.keys()
+        if vault_before.get(path) != vault_after.get(path)
+    }
+    require(
+        changed == {f"work/{work_id}.md", f"work/active/{work_id}.ref.md"},
+        f"Task creation changed unrelated knowledge files: {sorted(changed)}",
+    )
+    for path, content in shared_before.items():
+        require((target / path).read_bytes() == content, f"Task creation changed {path}")
     return work_id
 
 

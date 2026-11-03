@@ -77,6 +77,8 @@ Do not scan all workflow artifacts or project Skills by default. Ordinary discov
 
 Repository Markdown and Git are sufficient. Do not require helper execution to understand or operate the workflow.
 
+Before writing documentation, check the target file's responsibility, existing canonical content, and supporting evidence. Follow the repository's Writing Boundaries in `zettelkasten/knowledge-lifecycle.md`. Ordinary task bookkeeping updates the selected record and its route; an entry point or shared policy needs its own navigation or contract change to justify an edit.
+
 ## Use Optional Helpers
 
 Resolve this Skill directory as `SKILL_ROOT`. Use bundled helpers only when deterministic automation materially helps:

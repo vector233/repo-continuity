@@ -12,6 +12,8 @@ Read only the smallest context needed:
 
 Repository files are the durable source of truth. Chat history and vendor memory are optional caches.
 
+Before adding or moving documentation, check the destination's responsibility, existing canonical content, and supporting evidence using the Writing Boundaries in `zettelkasten/knowledge-lifecycle.md`. Keep task-specific state in its WORK and route, and change shared instructions or navigation only when their own contract changes.
+
 ## Workflow Routing
 
 Before editing, choose the lightest safe route from `zettelkasten/workflow.md`:
